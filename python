@@ -1,1 +1,1770 @@
+#การprint แสดงผล
+#นี้คือ strings
+print("#####Strings")
+first_name="Bro"
+food ="pizza"
+email="paramet.nu@gmail.com"
+print(first_name)
+print(f"Hello : {first_name}")
+print(f"you like : {food}")
+print(f"your email is: {email}")
+print("######Integers")
+#Integers
+age=25
+quantity =3
+num_of_studentts =30
+print(f"You are {age} years old")
+print(f"you are butying {quantity} itmes")
+print(f"YOu class has {num_of_studentts} studentts")
+print("####Float")
+# Float
+price =10.99
+gpa=3.2
+distance =5.5
+print(f"The price is: ${price}")
+print(f"You gpa is :{gpa}")
+print(f"You ran {distance}km")
+print("######Boolean")
+#Boolean
+is_student =False
+for_sale= True
+is_online =True
+print(f"Are you student?:{is_student}")
+if is_student:
+    print("Youa are e student")
+else:
+    print("you are NOt a student")
+print("######")
+if for_sale:
+    print("That time is for sale")
+else:
+    print("That time is Not available")
+print("######")
+if is_online:
+    print("You are online")
+else: 
+    print("You are offline")
+print("######type")
+print("เปลื่อน type ข้อมูลเช็ค type")
+# type
+name= "Toom tam"
+age = 25
+gpa = 3.1
+is_student =True
 
+print(type(age)) #int
+gpa= int(gpa)
+age= float(age)
+print(gpa)
+print(age)
+age=str(age)
+print(type(age))#str
+age+="1"
+print(age)# +1แบบเติมหลัง
+name=bool(name)
+print(name) # ไม่มีค่า ใน ข้อความถือ false
+
+print()
+print("####")
+# name= input ("What is your name?: ")
+# age= int(input("How old are you?: "))
+# age+=1
+# print(f"Hello {name}!")
+# print("HAPPY BIRIHDAY!")
+# print(f"You are {age} years old")
+
+# print("####")
+# lenght = float(input("Ener the lenght: "))
+# width = float(input("Enter the width: "))
+# area=lenght*width
+# print(f"The area is: {area}cm")
+
+# item =input("what itme would  you like to buy?: ")
+# price = float(input("What is the price?: "))
+# quantity =int (input("How many would you like?: "))
+# total =price *quantity
+# print(f"You have bought {quantity} x {item}/s")
+# print(f"you total is {total}")
+
+# adjective1 =input("Enter an adjective (description): ")
+# noun1 =input("Enter a nomn (person, place , thing): ")
+# adjective2 = input("Enter an adjective (description):")
+# verb1 = input("Enthe a verb ending with 'ing'")
+# adjective3=input("Enter an adjectoive (description): ")
+# print(f"Today I went to a {adjective1} zoo.")
+# print(f"In an exhibit, I saw a {noun1}")
+# print(f"{noun1} was {adjective2} and { verb1}")
+# print(f"was {adjective3}!")
+# print()
+
+
+# varycloes= int (input("ป้อนตัวเลข: "))
+# if varycloes%2==0:
+#     print(f"{varycloes} เลขคู่")
+# else:
+#     print(f"{varycloes} เลขคึ่")
+
+
+# friends= 0    
+# friends = friends+1
+# friends+=1
+# friends = friends-2
+# friends-=2
+# friends =friends*3
+# friends *3
+# friends =friends /2
+# friends /=2
+# friends = friends **2
+# friends **=2
+# remainder = friends % 3
+
+# x=3.14
+# y=4
+# z=5
+# result=round(x)
+# result=abs(y)
+# result= pow(4,3)
+# result = max(x,y,z)
+# result = min(x,y,z)
+
+import math
+x=9
+print(math.pi)
+print(math.e)
+result = math.sqrt(x)
+result=math.ceil(x) #ขี้น
+result=math.floor(x) #ขึ้น
+
+
+radius =float(input('Enter the redius of a circle: '))
+circumference = 2* math.pi  * radius
+print(f"The circumference is: {round(circumference,2)}")
+
+radius = float(input('Enter the redius of a circle: '))
+area = math.pi*pow(radius,2)
+print(f"The area of the circle is: {area} cm^2")  #2 พายอา
+
+import math
+
+radius = float(input("Enter the redius of a circle: "))
+area= math.pi*pow(radius,2)
+print(f"the area of the circle is: {round(area,2)} cm^2")# พายอากำลัง 2
+
+# พื้นที่สามเหลื่ยม
+import math
+a= float(input("Enter side A: "))
+b= float(input("Enter side B: "))
+
+c=math.sqrt(pow(a,2)+pow(b,2))
+print(f"Side C= {c}")
+
+# if = Do some code noly If some condition is Ture
+# Else do something else
+
+age= int(input("Etner your age: "))
+
+if age>=18:
+    print("Your are now sinned up!")
+elif age<0:
+    print("You have't been born yet!")
+elif age>=100:
+    print("You are too old to sing up")
+else:
+    print("You must be 18+ to sing up")
+
+response= input("Would you like food? (Y/N): ")
+if(response=="Y"):
+    print("Havs some food!")
+else:
+    print("No food for you!")
+
+name= input ("Enter your name: ")
+if name =="":
+    print("You did not type in you name!")
+else:
+    print(f"Have {name}")
+
+for_sale = True
+if for_sale:
+    print("This itme is for sale")
+else:
+    print("This item is NOT for sale")
+
+
+online= True
+if online:
+    print("The user online")
+else:
+    print("The user is offline")
+
+#Pthon caluculater 
+operator = input("Enter an operator (+,-,*,/): ")
+num1=input("Enter the 1st number: ")
+num2=input("Enter the 2nd nuber: ") 
+if operator=="+":
+    result =num1 + num2
+    print(round(result,3))
+elif operator=="-":
+    result =num1 - num2
+    print(round(result,3))
+elif operator=="*":
+    result =num1 * num2
+    print(round(result,3))
+elif operator=="/":
+    result =num1 / num2
+    print(round(result,3))
+
+else:
+    print(f"{operator } is not a valid operator")
+
+weight = float ( input("Enter your weight"))
+unit1= input("Kilograms or Pouunds? (K or L): ")
+if weight=="K":
+    weight*=2.205
+    unit="Lds."
+elif weight=="L":
+    weight/=2.205
+    unit="Kgs."
+else:
+    print(f"{unit1} was not vaild")
+
+print(f"Your is weight{round(weight,2)} {unit1} ")
+
+
+unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ")
+temp = float(input("Enter the temperature: "))
+if (unit=="C"):
+    temp =round((9*temp )/5+32, 1)
+    print(f" The temperature in Fahrenheit is : {temp} °F")
+elif (unit=="F"):
+    temp = round((temp -32) *5/9,1)
+    print(f" The temperature in Celsius is : {temp} °C")
+else:
+    print(f"{unit} is an invalid unit of measurement")
+    
+def is_palindrome ( s: str)->bool:
+    return s == s[::-1]
+print(is_palindrome("racecar"))
+print(is_palindrome("hello"))
+print(is_palindrome("madam"))
+print(is_palindrome('12321'))
+print(is_palindrome("python"))
+
+# and or not
+temp= 25
+is_raining =False
+
+if temp>35 or temp <0 or True:
+    print("The outdoor event is cancelled")
+else:
+    print("The outdoor event is still scheduled")
+
+temp=25
+is_sunny= True
+if temp>=28 and is_sunny:
+    print("It is HOT outside ")
+    print("It is SUNNY")
+elif temp <=0 and is_sunny:
+    print("It is COLD outside ")
+    print("It is SUNNY")
+elif temp <28 and temp >0 and is_sunny:
+    print("It is WARM outside ")
+    print("It is SUNNY")
+elif temp>=28 and not  is_sunny:
+    print("It is HOT outside ")
+    print("It is DLOUDY")
+elif temp <=0 and not  is_sunny:
+    print("It is COLD outside ")
+    print("It is DLOUDY")
+elif temp <28 and not temp >0 and is_sunny:
+    print("It is WARM outside ")
+    print("It is DLOUBY")
+ 
+num=5
+a=6
+b=7
+age=13
+temperature= 20
+user_role = "admin"
+print("Positive" if  num> 0 else "Negative")
+result= "EVEN" if num%2==0 else "ODD"
+
+max_num = a if a > b else b;input(max_num)
+min_num = a if a < b else b;input(min_num)
+
+status = "Adult"  if age >=18 else "Child";print(status)
+
+weather = "HOT" if temperature >20 else "COLD";print(weather)
+
+access_leave = "Full Access" if user_role =="admin" else "Limted Access";print(access_leave)
+
+
+
+# name= input("Enter you full name: ")
+phone_number= input("Enter your phone #: ")
+# result=len(name)
+#reuslt=name.find(" ")#ค้นหาตัว ในlen
+# result=name.rfind("o") # ค้นหาจาก หลัง
+# result= name.capitalize() #เปลี่อนตัวเรียกเป็นแป้นใหญ่
+#oper 0
+# name= name.upper()#ใหญ่ทั้งหมด
+# name= name.lower()#เล็กทั้งหมด
+# result = name.isdigit() #str true #int  false 
+# result = name.isalpha()#str false int true 
+# # result=phone_number.count("-");print(result)#การนับนำนวนตัวเลข
+# result= phone_number.replace("-"," ");print(phone_number)# การเปลื่ยนตัว
+
+useranem=input("Enter a username: ")
+
+if len(useranem) > 12:
+    print("Your useranem can't be come than 12 characters")
+elif not useranem.find(" ")==-1:
+    print("Your useranem can't contain  spaces")
+elif not useranem.isalpha():
+    print("Your username can't contain numbers")
+else:
+    print(f"Welcome {useranem}")
+
+#indexing 
+credit_number="1234-5678-9012-3456"
+# print(credit_number[0])
+# print(credit_number[0:4])#1234
+# print(credit_number[:4])
+# # print(credit_number[5:9])
+# print(credit_number[5:])#5678ขึ้นไป
+# print(credit_number[-1])#ค่าหลังสุด
+# print(credit_number[::2])#ข้ามดทีละ 2
+# print(credit_number[::3])
+last_digits = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digits}")
+
+#loop while python 
+name = input("Ente your name: ")
+while name=="":
+    print("You did not enter your name ") #โจทย์ ป้อนชื่อ
+else:
+    print(f"Hello {name}")
+ 
+age = int( input ("Enter your age: "))
+while age<0:
+    print("Age can't be negative") #โจทย์ อายุ
+    age=int (input("Enter your age: "))
+
+print(f"you are {age} years old")
+
+food = input("Enter a food you like (q to quit): ")
+while not food =="q":
+    print(f"You like {food}")  #โจทย์ พิมออกจาก loop
+    food = input("Enter another food you like (q to quit): ")
+
+print("bye")
+
+num = input("Enter a # between 1-10: ")
+while num< 1 or num >10:  #Enter a # between 1-10:
+    print(f"{num} is not vaild")
+    num=int(input("Enter a # beteen 1-10: "))
+
+print(f"Your number is {num}")
+
+principle =0
+rate=0
+tiem=0
+# ดอกเบี้ย
+while True:
+    principle = input("Enter the principle amount: ")
+    if principle <=0:
+        print("Principle can't be less than ro equal to zero")
+    else:
+        break
+while True:
+    rate = input("Enter the interest rate: ")
+    if rate <=0:
+        print("Principle can't be less than ro equal to zero")  
+    else:
+        break   
+while True:
+    tiem = int(input("Enter the time in years: "))
+    if tiem <=0:
+        print("Principle can't be less than ro equal to zero")
+    else:
+        break
+
+total = principle *pow((1+rate/100),tiem)
+print(f"Balance after {tiem} yars/s: ${total}:.2f")
+
+#for
+for x in reversed(range(1, 11)):
+    print(x)
+print("HAPP NEW YEAR!")
+for x in range(1,11,3):
+    print(x)
+
+credit_card="1234-4678-9012-3456"
+for x in credit_card:
+    print(x)
+
+for x in range(1,21):
+    if x==13:
+        break
+        continue
+    else:
+        print(x)
+
+import time
+my_time = int(input("Enter the time in seconds: "))
+
+for x in range(0,my_time):
+    print(x)
+    time.sleep(1)
+
+print("TME'S UP!")
+
+import time  #time import 
+my_time = int(input("Enter the time in seconds: ")) #ป้อนข้อมวล
+for x in reversed(range(0,my_time)): #เริ่ม 0-time 
+    seconds=x%60 #
+    minutes= int(x/60)%60 #
+    hours =int(x/3600) #
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")  #ทำให้เหลือ2 ทศ
+    time.sleep(1) #หนึ่่ง == ออกจากรูป
+print("TIME'S UP!") #แล้ว print time s up!
+
+
+while x>0:
+    while y >0:
+        print("do something")
+while x>0:
+    for y in range(9):
+        print("do something")
+
+for x in range(3):
+    for y in range(9):
+        print("Do something")
+for x in range(3):
+    while y>0:
+        print("do something")
+
+for e in range(3):
+    for x in range(1,10):
+        print(x,end=" ")    
+    print()
+
+rows = int(input("Enter the # of rows: "))
+columns = int(input("Enter the # of coulumns: "))
+symbol= input("Etner a symbol to use: ")
+for e in range(rows):
+    for x in range(columns):
+        print(symbol, end=" ")    
+    print()
+
+# List 
+fruit =["apple","orange","banna","coconut"]
+print(dir(fruit))
+print(help(fruit))
+print(len(fruit))
+print("apple" in fruit) #ทำถามหามีอยู่ใน fruit หรือป่าว
+fruit[0]="pineapple" #การให้ค่าใหม่ index
+fruit.append("pineapple") #เพิ่ม ตัวเข้าไป
+fruit.remove("apple") #apple จะไม่มีใน fruit แล้ว
+fruit.insert(0,"pineapple")#เพิ่ม แบบกำหนด index
+fruit.sort()#จะเรียง 
+fruit.reverse()#เรียงกลับ
+fruit.clear("pinapple")    #ล่างทั้งหมด กับ ลบบ้างตัว
+print(fruit[0])#เลือก List ใน index เริ่ม0
+fruit.index("apple")#คืนค่า
+print(fruit.count("pineapple")) #เจอเป็นคำซ้ำ
+print(fruit.index("apple")) #หา index
+
+print(fruit[0:3])
+for x in fruit:
+    print(x)
+# Set
+fruit={"apple","orange","banna","coconut"} # ซ้ำจะแสดงตัวเดี่ยว
+print(dir(fruit))
+print(help(fruit))
+print(len(fruit))
+print("apple" in fruit) #ทำถามหามีอยู่ใน fruit หรือป่าว
+fruit.add("pineapple") #เพิ่ม
+fruit.remove("apple") #ลบ apple
+fruit.pop()#สุ่ม ลบ1
+fruit.clear()
+
+#Tuple
+fruit=("apple","orange","banna","coconut")
+print(dir(fruit))
+print(help(fruit))
+print(len(fruit))
+print("apple" in fruit) #ทำถามหามีอยู่ใน fruit หรือป่าว
+print(fruit.index("apple")) #หา index
+print(fruit.count("coconut"))#เจอเป็นคำซ้ำ
+for fruit in fruit:
+    print(fruit) 
+
+foods= []
+prices=[]
+total=0
+
+while True:
+    food= input("Enter a food to but (q to quit): ")
+    if food.lower()=="q":
+        break
+    else:
+        price=float(input(f"Enter the pirce of a {food}: $"))
+        foods.append(food)
+        prices.append(price)
+
+print("-----YOUR CART ----")
+for food in foods:
+    print(food ,end=" " )
+
+for price in prices:
+    total +=price
+print()
+print(f"Your total is : $ {total}")
+
+# while True:#ยังเขียนไม่ครบ
+#     x=int(input("Enter your tiem (0-24): "))
+#     if 6<= x <=12:
+#         print(f"สวัสดีตอนเช้า {x}")
+#     elif 13<= x <=18:
+#         print(f"สวัสดีตอนบ่าย {x}")
+#     elif 19<= x <=23:
+#         print(f"สวัสดีตอนเย็น {x}")
+#     elif x==0:
+#         print(f"เที่ยง")
+#     else:
+#         print("ไม่มีข้อมูล")
+
+# day 16
+# 1มิติ
+fruits=     [ "apple","orange","banana","coconut"]
+vegetables= ["celery","carrots","potatoes"]
+meats=      ["chicken","fish","turkey"]
+groceries= [fruit,vegetables,meats]
+print(groceries[0][0])
+
+# 2 มิติ
+groceries=[[ "apple","orange","banana","coconut"],
+            ["celery","carrots","potatoes"],
+            ["chicken","fish","turkey"]]
+for collection in groceries:
+    for food in collection:
+        print(food,end="")
+    print()
+
+    
+# ทูเพิล  2 มิติ
+num_pad=((1,2,3),
+         (4,5,6),
+         (7,8,9),
+        ("*",0,"#"))
+for row in num_pad:
+    for num in row:
+        print(num,end=" ")
+    print()
+
+
+questions = ("How many elements are in the periodic table?: ",
+             "Which animal lays the largest agge?: ",
+             "what is the most abundant ges in Earth's atmosphere?: ",
+             "How many bones are in the human body?: ",
+             "Which planet int solar systme is the hottest: ")
+
+options = (("A. 116","B. 117","C.118","D. 119"),
+           ("A. Whale","B. Crocodile","C. Elephant","D. Ostrich"),
+           ("A. Nitrogen","B. Oxygen","C. Carbon-Dioxide","D.Hydrogen"),
+           ("A. 206","B. 207","C. 208","D. 209"),
+           ("A.Mercury","B. Venus","C. Earth","D. Mars"))
+
+answres = ("C","B","A","A","B")
+guesses = []
+score = 0
+question_num = 0
+
+for question in questions:
+    print("----------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+    guess= input("Enter (A,B,C,D):").upper()
+    guesses.append(guess)
+    if guess == answres[question_num]:
+        score+=1
+        print("CORRECT! ")
+    else:
+        print("INCORRECT!")
+        print(f"{answres[question_num]} is the correct answer")
+    question_num +=1
+
+print("----------------")
+print("   RESULTS"      )
+print("----------------")
+
+print("answres: ",end=" ")
+for answer in answres:
+    print(answer,end=" ")
+print()
+
+print("guesses: ",end=" ")
+for guess in guesses:
+    print(guess,end=" ")
+print()
+
+score = score / len(questions*100)
+print(f"YOu score is: {score}%")
+
+
+capitals ={"USA":"Washingthon D.C.",
+           "India":"New Delhi",
+           "China":"Beijing",
+           "Russia":"Moscow"}
+
+# print(dir(capitals))
+
+# print(help(capitals))
+
+# capitals.get("USA")
+
+# if capitals.get("japan"):
+#     print("That capital exists")
+# else:
+#     print("That capital doesn't exist")
+
+capitals.update({"Germany":"Berlin"})#เพิ่มค่า
+capitals.update({"USA":"Detroit"}) # เปลี่ยนค่า
+capitals.pop("China")
+capitals.popitem()
+capitals.clear()
+capitals.keys()
+
+print(capitals)
+
+for key in capitals.keys():
+    print(key)
+values = capitals.values()
+for valuee in capitals.values():
+    print(values)
+capitals.items()
+for key,value in capitals.items():
+    print(f"{key}:{value}")
+
+
+menu = {"pizza":3.00,
+        "nachos":4.50,
+        "popcorn":6.00,
+        "fries":2.50,
+        "chips":1.00,
+        "pretzel":3.50,
+        "soda":3.00,
+        "lemonade":4.25,
+        }
+cart= []
+total=0
+print("-------MENU--------")
+for key ,value in menu.items():
+    print(f"{key:10}: ${value}.2f")
+print("-------MENU--------")
+
+while True:
+    food=input("Select an time (q to quit): ").lower()
+    if food =="q":
+        break
+    elif menu.get(food) is not None:
+        cart.append(food)
+print("-------YOUR ORDER--------")
+for food in cart:
+    total = total= menu.get(food)
+    print(food,end=" ")
+
+print()
+print(f"Total is: ${total}:.2f")
+
+import random
+low=1
+high=100
+options=("rock","paper","sissors")
+cards=["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+# number= random.randint(1, 20)
+# number=random.random()
+# options=random.choice(options)
+# random.shuffle(cards)
+# options=random.choice(options)
+# print(number)
+
+import random
+
+lowest_num = 1
+highest_num = 1000
+answer = random.randint(lowest_num,highest_num)
+
+guesses = 0 
+is_running = True
+
+print("Python Number Guessing Game")
+print(f"Seslect a number bwtween {lowest_num} and {highest_num}")
+
+while is_running:
+
+    guess = input("Enter your guess: ")
+
+    if guess.isdigit():
+        guess = int (guess)
+        guesses +=1
+
+        if guess < lowest_num or guess > highest_num:
+            print("That numbe is out of range")
+            print(f"Seslect a number bwtween {lowest_num} and {highest_num}")
+        elif guess> answer:
+            print("Too low! Try again!")
+        elif guess< answer:
+            print("Too high! Try again!")
+        else:
+            print(f"CORRECT! The answer was {answer} ")
+            print(f"Number of guesser:{guesses}")
+            is_running = False
+    else:
+        print("Invalid guess")
+        print(f"Seslect a number bwtween {lowest_num} and {highest_num}")
+    
+import random
+options = ("rock","paper","scissors")
+playing  = True
+while  playing:
+
+    player = None
+    computer = random.choice(options)
+    
+while player not in options:
+    player  = input ("Enter a choice (rock,paper,scissors): ")
+
+print(f"Playr: {player}")
+print(f"Computer:{computer}")
+if player == computer:
+    print("It's a tie!")
+elif player == "rock" and computer == "scissors":
+    print("You win!")
+elif player == "paper" and computer == "rock":
+    print("You win!")
+elif player == "scissors" and computer == "paper":
+    print("You win!")
+else:
+    print("YOou lose!")
+
+
+play_again = input("Play again ? (y/n):").lower()
+if not play_again =="y":
+    playing = False
+
+print("Thanks for playing!")
+
+
+import random
+print("\u25CF \u250C \u2500 \u2510 \u2502 \u2514 \u2518")
+#● ┌ ─ ┐ │ └ ┘
+"┌────────────┐"
+"│            │"
+"│            │"
+"│            │"
+"└────────────┘"
+
+dice_art = {
+    1:("┌───────────┐",
+       "│           │",
+       "│     ●     │",
+       "│           │",
+       "└───────────┘"),
+    2:("┌───────────┐",
+       "│  ●        │",
+       "│           │",
+       "│        ●  │",
+       "└───────────┘",),
+    3:("┌───────────┐",
+       "│  ●        │",
+       "│     ●     │",
+       "│        ●  │",
+       "└───────────┘",),
+    4:("┌───────────┐",
+       "│  ●     ●  │",
+       "│           │",
+       "│  ●     ●  │",
+       "└───────────┘",),
+    5:("┌───────────┐",
+       "│  ●     ●  │",
+       "│     ●     │",
+       "│  ●     ●  │",
+       "└───────────┘",),
+    6:("┌───────────┐",
+       "│  ●     ●  │",
+       "│  ●     ●  │",
+       "│  ●     ●  │",
+       "└───────────┘",),
+}   
+
+dice = []
+total = 0
+mum_of_dice = int(input("How many dice?: "))
+
+dice.append(random.randint(1,6))
+for die in range(num_of_studentts):
+    dice.append(random.randint(1,6))
+
+for die in range (num_of_dice):
+    for line in dice_art.get(dice[die]):
+        print(line)
+
+for die in dice:
+    total += die
+print(f"total: {total}")
+
+def hapy_birthday(name,age):
+    print(f"Happy birthday to {name}!")
+    print(f"You are {age} years old!")
+    print("Happy birthday to you!")
+    print()
+ 
+hapy_birthday("Bro",20)
+hapy_birthday("steve",30)
+hapy_birthday("Joe",40)
+
+def display_invoice(useranme, amount ,due_date):
+    print(f"Hello{useranem}")
+    print(f"Your bill fo ${amount:.2f} is due: {due_date}")
+display_invoice("JoeSchmo",100.01, "01/02" )
+
+
+def add(x,y):
+    z = x+y
+    return z
+
+def subtract(x,y):
+    z = x-y
+    return z
+
+def multiply(x,y):
+    z = x*y
+    return z
+
+def divide(x,y):
+    z = x/y
+    return z
+
+print(add(1,2))
+
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
+
+full_name = create_name("spongebob", "squarepants")
+
+print(full_name)
+#วันที่ 18
+#สตรู ราคาสุดท้ายของสินค้า
+def net_price(list_price, discount, tax):
+    return list_price *(1-discount)*(1+tax)
+
+net_price(500,0,0.05 )
+
+#การ นับท้อดหลัง
+import time
+def count(end, start=0):
+    for x in range(start,end+1):
+        print(x)
+        time.sleep(1)
+    print("DONE!")
+
+count(20,15)
+
+print("1","2","3","4","5",sep="-")
+
+def add(*args):
+    total=0
+    for agr in args:
+        total += agr
+    return total
+
+print(add(1,2,3,4,5))
+
+def display_name(*args):
+    for agr in args:
+        print(agr,end=" ")
+
+display_name("Spongebob","Harold","Squarepants","III")
+
+def print_address(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_address(street="123 Fake st.",
+              city="Detroit",
+              state="MI",
+              zip="128")
+
+def shipping_label(*args,**kwargs):
+
+    for arg in args:
+        print (arg,end=" ")
+#  for value in kwargs.values():
+#         print(values, end=" ")
+#         print()   
+
+    if "apt" in args: 
+        print(f"{kwargs.get('city')} {kwargs.get('city')} {kwargs.get('city')}")
+    else:
+        print(f"{kwargs.get('state')}")
+    print(f"{kwargs.get('zip')}" ) 
+
+   
+shipping_label("Dr","Spongebob","Squarepanst","III","apt",
+            city="Detroit",
+            state="\nMI",
+            zip="128",)
+            # apt="1222")
+
+numbers =(1,2,3,4,5)
+for number in (numbers):
+    print(number ,end=" ")
+
+fruits = {"apple","orange","banana","coconut"}
+for fruit in reversed(fruits):
+    print(fruit) #not
+# สั้นๆ: items() = เอาคู่ key, value จาก dict ออกมาใช้งานครับ ✅
+# การแสดงผลใน dict
+my_dictioinary = {"A":1,"B":2,"C":3}
+for key,value in my_dictioinary:
+    print(key,value)
+ 
+my_dictioinary = {"A":1,"B":2,"C":3}
+for key in my_dictioinary:
+    print(key)
+
+for key,velue in my_dictioinary.values():
+    print(f"{key} = {velue}")
+
+
+#Membershiop operators = used to test whater a value or variable is found in sequence   
+    #(string, list,tuple,set, dictionary)
+    # #in not inword ="APPLE"
+
+letter = input("Guess a letter in the secreet word:  ")
+if letter in word:
+    print(f"There is a {letter}")
+else:
+    print(f"{letter} was not found")
+
+
+word ="APPLE"
+letter = input("Guess a letter in the secreet word:  ")
+if letter in word:
+    print(f"There is a {letter}")
+else:
+    print(f"{letter} was not found")
+
+
+students = {"Spongebob","Patrick","Sandy"}
+student = input("Enter the name of a student: ")
+if student not in students:
+    print(f"{letter} was not found")
+else:
+    print(f"There is a {letter}")
+
+# ทำลอง ค้นหา คำ ตอบ
+grades ={"Sandy":"A","Squidward":"B","Spongebob":"C","Patrick":"D"}
+student = input ("Enter the name of a student: ")
+if student in grades:
+    print(f"{student}'s grade is {grades[student]}")
+else:
+    print(f"{student} was not found")
+
+email = "Paramet.nu@ku.th"
+if "@"in email and "." in email:
+    print("Valid email")
+else:
+    print("Invalid email")
+
+
+# List  comprehension  = A conicse way to create lists in Phthon     
+        #Compact and easier to read than traditional loops  
+        #[expression for value in iterable if condition]
+
+doubles = []
+for x in range(1,11):
+    doubles.append(x*2)
+print(doubles)
+
+doubles = [x*2 for x  in range (1,11)]
+
+triples = [y*3 for y in  range(1,11)]
+
+squares = [z*z for z in  range(1,11)]
+print(squares)
+
+fruits = ["apple","orange","banan","cocount"]
+fruits = [fruit.upper() for fruit in fruits ] # บรรนี้ print indexที่ 0ในแต่ล้ะคำ
+print(fruits)
+
+numbess = [1, -2, 3, -4, 5, -6]
+positive_mums = [num for num in numbess if num>=0] 
+negative_mums = [num for num in numbess if num<0] 
+even_muns = [ num for num in numbess if num%2==0]
+print (positive_mums)
+
+# คำสั่งตรง
+#Match- case statement (switch): An alternative to using many 'elif statments # #
+#                                   Excute some code if a value matches a 'case'
+#                                   Benefits: cleaner and syntax is more reradable#
+
+
+def day_fo_week(day): # string the same alternate
+    match day: 
+        case 1|2|3|4|5:
+            return True 
+        case 6|7:
+            return False
+        case _:
+            return "NOT A VAILD DAY"
+            
+print (day_fo_week(2))
+
+
+def day_fo_week(day): # string the same alternate
+    match day: 
+        case 1:
+            return "It is Monday"
+        case 2:
+            return "It is Tuesday"
+        case 3:
+            return "It is Wednesday"
+        case 4: 
+            return "It is Thursday"
+        case 5:
+            return "It is Friday"
+        case 6:
+            return "It is Saturday"
+        case 7:
+            return "It is Sunday"
+        case _:
+            return "NOT A VAILD DAY"
+            
+print(day_fo_week(input(int("Etner your is day"))))
+# โมดูล
+# module = a file containing cod eyou want to include in your program 
+# use 'improt to include a moduule (built-in or your own )
+# useful to break up a lage program reusable separate files 
+
+print(help("modules","math"))
+
+import math as m
+print(m.pi)
+
+from math import pi
+print(pi)
+
+from math import e# 2.718
+a,b,c,d,e=1,2,3,4,5 # สามารถเปลื่ยนได้
+print(e**a)
+print(e**b)
+print(e**c)
+print(e**d)
+print(e**e)
+
+import work # อีกไฟล์ ท
+result = work.pi
+result = work.square(3)
+result = work.cube(3)
+result = work.circumference(3)
+result = work.area(3)
+print(result)
+
+#ความละเอียดของขอบเขต
+# variable scope = where a variable is visible and accessible 
+# scope resolution = LEGB Local -> Enclose -> Global -> Built-in
+#local
+# def fanc1():
+#     a = 1
+#     print (b)
+# def fanc2():
+#     b=2
+#     print(a)
+# Enclose 
+# def fanc3():
+#     x = 1
+#     def fanc4():
+#         print(x)
+#     fanc4()
+
+#fanc3()#Global 
+# def fanc1():
+#     print (b)
+# def fanc2():
+#     print(a)
+# b=2
+# a=2
+# fanc2()
+# fanc1()
+# # Built-in
+# from math import e
+
+# def func1():
+#     print(e)
+# e=3
+# func1
+
+
+# def main():
+
+# if __name__=='__main___':
+#     main()
+def show_balance():
+    print(f"Your balance is ${balance:.2f}")
+def deposit():
+    amount = float(input ("Enter an aomut to bee deposied: "))
+    if amount <0:
+        print("That's not a valid amomnt")
+        return 0
+    else:
+        return amount
+def witdraw(balance):
+    amount = float(input("Enter amount to be withdrawn: "))
+
+    if amount > balance :
+        print("Insufficient funds")
+    elif amount < 0:
+        print("Amont must be greater than 0")
+        return 0
+    else:
+        return amount
+
+def main():
+    balance = 0 
+    is_running = True
+
+    while is_running:
+        print("********************")
+        print(" Bnking Program  ")
+        print("1.Show Balance")
+        print("2.Deposit")
+        print("3.Withdraw")
+        print("4.Exi t")
+        print("********************")
+
+        choice = input("Enter your choice(1-4): ")
+
+        if choice=="1":
+            show_balance()
+        elif choice=="2":
+            balance+=deposit()
+        elif choice=="3":
+            balance-=witdraw()
+        elif choice=="4":
+            is_running = False
+        else:
+            print("That is not a valid choice")
+
+
+if __name__=='__main___':
+    main()
+
+import random
+
+def spin_row():
+    symblos = ['🍒' ,'🍉' ,'🍋', '🍟', '✨' ]
+
+    return [random.choice(symblos)for _ in range(3)]
+
+def print_row():
+    print("************************")
+    print(" | ".join(row ))
+    print("************************")
+def get_payout(row,bet):
+    if row[0]==row[1]==row[2]:
+        if row [0]=='🍒':
+            return bet * 3
+        elif row [0]=='🍉':
+            return bet * 4
+        elif row [0]=='🍋':
+            return bet * 5
+        elif row [0]=='🍟':
+            return bet * 10
+        elif row [0]=='✨':
+            return bet * 20
+
+def main():
+    balance =100
+
+    print("************************")
+    print("Welcome to Python Slots")
+    print("Symbols: 🍒 🍉 🍋 🍟 ✨")
+    print("************************")
+
+    while balance>0:
+        print(f"Current baalance: $ {balance}")
+
+        bet = input("Place your bet amount: ")
+
+        if not bet.isdigit():
+            print("Please enter a vaild number")
+            continue
+        bet = int(bet)
+
+        if bet > balance :
+            print("Insufficiednt funds")
+            continue
+
+        if bet <=0:
+            print("Bet must be geatter than 0")
+            continue 
+
+        balance-=bet
+
+        row=spin_row()
+        print("Spinning ...\n")
+        print_row(row)
+        payout = get_payout(row,bet)
+
+        if payout >0:
+            print(f"You won ${payout}")
+        else:
+            print("Sorry you lost this round ")
+        balance +=payout
+        play_again = input ("Do you want to spin again? (Y/N): ").upper()
+
+        if play_again != 'Y':
+            break
+    print(f"Game over! Your final balance is $ {balance}")
+if __name__== '__main__':
+    main()
+
+import random 
+import string
+
+chars = " " + string.whitespace + string.punctuation+  string.digits +  string.ascii_letters
+chars = list (chars)
+key = chars
+random.shuffle (key)
+
+print(f"chars:{chars}")
+print(f"key:{key}")
+
+plain_text = input ("Enter a message to encrypt: ")
+cipher_text = ""
+
+for letter in plain_text:
+    index = chars.index(letter)
+    cipher_text +=key[index]
+
+print(f"originla message: {plain_text}")
+print(f"encrypted message: {cipher_text}")
+# สลับจาก chars == key 
+
+
+# Hnagman in Python 
+# from wordslist import words
+words = ("apple","orange","banana","coconut","pineapple")
+ 
+#dictionary of key ()
+hangman_art = {0:("   ",
+                  "   ",
+                  "   "),
+               1:(" o ",
+                  "   ",
+                  "   "),
+               2:(" o ",
+                  " |  ",
+                  "   "),
+               3:(" o ",
+                  "/|  ",
+                  "   "),
+               4:(" o ",
+                  "/|\\  ",
+                  "   "),
+               5:(" o ",
+                  "/|\\   ",
+                  "/   "),
+               6:(" o ",
+                  "/|\\   ",
+                  "/ \\  "),}
+
+def display_man(wrong_guesses):
+    print("***********")
+    for line in hangman_art[wrong_guesses]:
+        print(line)
+    print("***********")
+
+def display_hint(hint):
+    print("***********")
+    print(" ".join(hint))
+    print("***********")
+
+def display_answer(answer):
+    pass
+    
+def main():
+    answer = random.choice(words)
+    print(answer)
+    hint = ["_"]*len(answer)
+    print(hint)
+    wrong_guesses= 0
+    guessed_letters = set()
+    is_raining= True
+
+    while is_raining:
+        display_man(wrong_guesses)
+        display_hint(hint)
+        display_answer(answer)
+        guess = input("Enter a letter: ").lower()
+        
+        if len(guess) !=1 or not guess.isalpha():
+            print("Invalid input ")
+            continue 
+
+        if guess in guessed_letters:
+            print(f"{guess} is already guessed")
+            continue
+
+        guessed_letters.add(guess)
+            
+        if guess in answer:
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i]=guess
+
+        else:
+            wrong_guesses +=1
+
+        if "_"not in hint:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("YOU WIN!")
+            is_running = False
+        elif wrong_guesses >= len(hangman_art) -1:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("YOU LOSE!")
+            is_running = False
+
+if __name__=="__main__":
+    main()
+
+# object = A "bundle " of related attributes (variables) mad methods (functions)
+#           EX. phone , cup, book
+#           You need a "Class" to create many objects
+
+# class = (blueprint) uused to design the structure and layout of an objectw
+# ไปอยู่ ไฟล์car.py
+from car import Car  
+car1 = Car("Mustang", 2024, "red", False)
+car2 = Car("Corvette", 2025, "blue", True)
+print("--------CAR--------")
+print(Car.num_car)
+car1.drive()
+car2.stop()
+car1.describe()
+print("    ----NAD-----    ")
+
+# class variables = shared among all instances of a class
+#                   Defined outside the construcotor 
+#                   Allow you to share data among all objects created from tthat class
+
+class Student:
+
+    class_year = 2024
+    num_student = 0
+
+    def __init___(self,name, age):
+        self.name=name
+        self.age=age
+        Student.num_student +=1
+
+student1 = Student("Spongebob",30)
+student2 = Student("Patrink",35)
+student3 = Student("Squidward",35)
+student4 = Student("Sandy",27)
+
+
+print(f"My graduating class of {Student.class_year} has {Student.num_student} student")
+print(student1.name,age)
+print(student2.name,age)
+print(student3.name,age)
+print(student4.name,age)
+#ไม่ใช่หัวข้อ
+# print(student2.name)
+# print(student2.age)
+# print(student2.class_year)
+
+
+# Inheritance = Allows a class attrbutes and methods from another calss Helps wiht code reusability and extensibility claa Child(Parant)
+
+
+class Animal: 
+    def __init__(self,name):
+        self.name=name
+        self.is_alive = True
+
+    def eat(self):
+        print(f"{self.name} is enting")
+
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+    
+class Dog(Animal):
+        def speak(self):
+            print("WOOF!")
+class Cat(Animal):
+        def speak(self):
+            print("MEOW!")
+class Mouse(Animal):
+    def speak(self):
+        print("SQUEEK!")
+
+dog = Dog("Scooby")
+cat = Cat("Garfeld")
+mouse = Mouse("Mickey")
+
+
+print(dog.name)
+print(dog.is_alive)
+cat.eat
+
+# multiple inheritance = inherit from more than one parnet class
+#                           c(a,b)
+# multilevel inheritance  = inherit from a parent which inher inherits form another parent 
+#                           c(b)<- b(a)<-a  #
+
+class Animal:
+    def __init__(self,name):
+        self.name=name
+        
+    def eat(self):
+        print("This animal is eating")
+    
+    def sleep(self):
+        print("This animal is sleeping")
+
+class Pery(Animal):
+    def flee(self):
+        print("This animal is fleeing")
+
+class Predator(Animal):
+    def hunt(self):
+        print("This animal is hunting")
+
+class Rabbit(Pery):
+    pass
+
+class Hawk(Predator):
+    pass
+
+class Fish(Pery,Predator):
+    pass
+
+rabbit = Rabbit("Bugs")
+hawk = Hawk("Tony")
+fish =Fish("Nemo")
+
+fish.ent()
+
+
+#super() = Function used in child class to call methods from a parent class (superclass).
+#           Allows you to extend the functionality of the inherited methods
+class Shape:
+    def __init__(self,color,filled):
+        self.color=color
+        self.filled=filled
+        
+    def describe(self):
+        print(f"It is {self.color} and {'filled' if self.filled else 'not filled' }")
+
+class Circle(Shape):
+    def __init__(self,color,filled,redius):
+        super().__init__(color,filled)
+        self.redius=redius
+
+    def describe(self):
+        print(f"It is a circie with an area of {3.14*self.redius * self.redius}cm²")
+        super().describe()
+
+class Square(Shape):
+    def __init__(self,color,filled,width):
+        super().__init__(color,filled)
+        self.redius=width
+
+    def describe(self):
+        print(f"It is a circie with an area of {self.width * self.width}cm²")
+        super().describe()
+
+class Triangle(Shape):
+     def __init__(self,color,filled,height,width):
+        super().__init__(color,filled)
+        self.height=height
+        self.width=width
+
+     def describe(self):
+        print(f"It is a circie with an area of {self.width * self.height / 2}cm²")
+        super().describe()
+
+circle = Circle(color="red",filled=True,redius=5)
+square = Square(color="red",filled=True,width=6 )
+triangle = Triangle(color="yellow",filled=True, width=7 ,height=8)
+print(circle.color)
+print(circle.filled)
+print(f"{circle.redius}.cm")
+print(f"{triangle.height}.cm")
+circle.describe()
+
+
+class Shape:
+    pass
+class circle(Shape):
+    pass
+class Square(Shape):
+    pass
+class Triangle(Shape):
+    pass
+
+shpaes = [Circle(),Square(),Triangle()]
+
+#duck typing  = Another way to achieve polymorphism besides Inheritance
+#               object must have the minimum necessary attributes/methods
+#              "It is looks a duck and quacks likea duck , it must be a duck."#
+
+class Animul:
+    alive= True
+
+class Dog(Animal):
+    def speak(self):
+        print("WOOF!")
+class Cat(Animal):
+    def speak(self):
+        print("MEOW!")
+class Car:
+    alive=False
+    def speak(self):
+        print("HONK!")
+
+    
+
+anumuls=[Dog,Car,Cat]
+for anumul in anumuls:
+    anumul.speak()
+    print(anumul.alive)
+
+
+# Class methods  = Allow oper ations relaterd class itself 
+#                   Take (cls) as the first parameter, which represents the class itself.
+ 
+
+class Student:
+    count = 0
+    total_gpa = 0
+
+    def __init__(self,name,gpa):
+        self.name=name
+        self.gpa=gpa
+        Student.count +=1
+        Student.total_gpa += gpa
+
+    # INSTANCE METHOD
+    def get_info(self):
+        return f"{self.name} {self.gpa}"
+        
+    @classmethod
+    def get_count(cls):
+        return f"Total # of students: {cls.count}"
+    
+    @classmethod
+    def get_average_gpa(cls):
+        if cls.count ==0:
+            return 0
+        else:
+            return f"Average gpa : {cls.total_gpa/ cls.count:.2f}"
+    
+student1 = Student("Spongebob",3.2)
+student2 = Student("Patrick",2.0)
+student3 = Student("Sandy",3.2)
+
+print(Student.get_count())
+print(Student.get_average_gpa())
+
+# magic methods 
+# Class methods = Allow operations related to teh class itself 
+#                   Take (cls) as the first parameter, which represents the class itself.
+
+# Instance methods = Best for operations on instances of the class (objects)
+# Static methods = Best for utility functions that to not need access to class data
+# Class methods = Best ofr class-level data or require access ot the class ifself
+
+class Book:
+    def __init__(self,title,author,num_pages):
+        self.title=title
+        self.author=author
+        self.num_pages=num_pages
+
+    def __str__(self):
+        return f"{self.title} by {self.author}"
+    
+    def __eq__(self, other):
+        return self.title == other.title and self.author == other.author
+    
+    def __lt__(self,other):
+        return self.num_pages < other.num_pages
+
+    def __add__(self,other):
+        return f"{self.num_pages + other.num_pages} pages"
+    
+    def __contains__(self, keyword):
+        return keyword in self.title or keyword in self.author
+    
+    def __getitem__(self,key):
+        if key == "title":
+            return self.title
+        elif key == "author":
+            return self.author
+        elif key == "num_pages":
+            return self.num_pages
+        else:
+            return f"key '{key}' was not found"
+
+book1=Book("The Hobbit","J.R.R Tolkine",310)
+book2=Book("Harry Potter and The Philosopher's Stone","J.R.R Tolkine",310)
+book3=Book("The Lion,the Witch and the Wardrobe","C.S. Lewis",172)
+
+print(book1)
+print(book1 == book2)
+print(book1 < book3)
+print(book2 + book3)
+print("Lion" in book3)
+print(book1['title'])
+
+# 56
+#@property = Decorator used of define a method as a property (in can be accessed like an attribute )
+#            Benefit: Add additional logic when read, write or delete attributes
+#            Gives you getter, setter, and deleter method 
+
+
+class Rectangle:
+    def __init__(self,width,height):
+        self.width= width
+        self.height= height
+    @property
+    def widht(self):
+        return f"{self._width:.1f} cm"
+
+    @property
+    def height(self):
+        return f"{self.height:1f} cm"
+    
+    @width.setter
+    def width (self, new_height):
+        if new_height  > 0:
+            self.height = new_height
+        else:
+            print("Width must be greater than zero")
+
+
+    @height.setter
+    def width (self, new_height):
+        if new_height  > 0:
+            self.height = new_height
+        else:
+            print("Width must be greater than zero")
+
+
+    @widht.setter
+    def widht(self):
+        del self._widht
+        print("Widht has been deleted")
+
+    @height.setter
+    def height(self):
+        del self._height
+        print("Height has been deleted")
+rectangel = Rectangle(3,4)
+
+rectangel .widht = 5
+rectangel .height = 6
+input
+del rectangel.widht
+del rectangel.height
+
+print(rectangel.widht) 
+print(rectangel.height) 
+
+
+# 57 Decorator = Afunction that extends the behavior of another funciton
+#               w/o modiftying the base function 
+#               pass the base function as an argument ot the decorator
+
+#               @add_sprinkles               
+#               get_ice_cream("vanila")
+
+
+def add_sprinkles(func):
+    def wrapper(*argr,**kwargs):
+        print("*You add sprinkles 🎊")
+        func(*argr,**kwargs)
+    return wrapper
+
+def add_fudge(func):
+    def wrapper(*argr,**kwargs):
+        print("You add fudge 🍟")
+        func(*argr,**kwargs)
+    return wrapper
+
+@add_sprinkles
+@add_fudge
+
+def get_ice_cream(flavor):
+    print(f"Here is your {flavor} ice cream 🍦")
+
+get_ice_cream("vanilla")
+
+# 58 exception = An eventt that interrupts the flow of a program
+#              (ZeroDivisonError, TyepError,ValueError)
+#               1.try,2.except,3.finally
+try:
+    numbur = int(input("Enter a number: "))
+    print(1/number)
+except ZeroDivisionError:
+    print("You can't divide ny zero IDIOT!")
+except ValueError:
+    print("Enter only numbues please!")
+except Exception:
+    print("Someting want wrong!")
+finally:
+    print("Do some cleanup here")
+#59
+#python file detcetion
+# 
+
+import os
+
+file_path = "test.txt"
+if os.path.exists(file_path):
+    print(f"the location '{file_path}' exists")
+
+    if os.path.isfile(file_path):
+        print("That is a file")
+    elif os.path.isdir(file_path):
+        print("that is a dircetory")
+else:
+    print("That location doesn't exist")
+
+
+# 60 
+#python writing files (.txt, .json, .csv)
+
+txt_data = "I like pizza!"
+
+file_path= "C:/Users/INBOOK X2/Desktop/output.txt"
+
+with open(file_path,"w") as file:       
+    file.write(txt_data)
+    print(f"txt file '{file_path}' was created")
+
+# 61
+file_path = "C:/Users/INBOOK X2/Desktop/output.txt"
+
+with open(file_path,"r") as file:
+    content = file.read()
+    print(content)
